@@ -1,0 +1,203 @@
+.bigContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 60%;
+    padding: 50px;
+
+}
+
+.left p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #404040;
+}
+
+.left h2, h3 {
+    font-size: 130%;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+
+.right {
+    background:url("Photos/despre.jpeg");
+    width: 40%;
+    height:80vh;
+    position: relative;
+}
+
+
+.citat {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    border-left: 6px solid var(--MainColor);
+    font-size: 130%;
+    left: 57%;
+    color: var(--MainColor);
+    transform: translate(-57%);
+    padding: 10px 20px ;
+    font-weight: 500;
+    font-style: italic;
+    transition: 0.5s;  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* citat */
+
+.citat::before {
+  position: absolute;
+  content: "”";
+  color: var(--MainColor);
+  font-size: 3rem;
+  line-height: 0;
+  top: 15px;
+  left: 0px;
+}
+
+
+.citat:after {
+    position: absolute;
+    content: "”";
+    color: var(--MainColor);
+    font-size: 3rem;
+    line-height: 0;
+    bottom: -14px;
+    right: 30px;
+}
+
+
+
+.informationText {
+    font-size: 250%;
+    padding: 50px 0px;
+    padding-bottom: 75px;
+    text-align: center;
+    position: relative;
+}
+
+.informationText::after {
+    content: "";
+    height: 4px;
+    width: 10%;
+    background: var(--MainColor);
+    position: absolute;
+    left: 50%;
+    bottom:50px;
+    border-radius: 15px;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+
+
+.bigContainer:hover .informationText::after {
+  width:20%;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+   
+    .right {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .bigContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .citat {
+        font-size: 150%;    
+    
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  
+    .left {
+        padding: 30px;
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    .informationText {
+        font-size: 230%;
+    }
+
+    .left h2 {
+        font-size: 130%;
+    }
+
+    .left h3 {
+        font-size: 140%;
+    }
+    
+    .left p {
+        font-size: 95%;
+    }
+
+    .citat {
+        font-size: 90%;    
+
+    
+    }
+
+    
+    .right {
+        height: 70vh;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+
+   
+
+    .citat {
+        font-size: 90%;    
+    
+    }
+    .left h2 {
+        font-size: 120%;
+    }
+
+    .left h3 {
+        font-size: 130%;
+    }
+
+    
+    .right {
+        height: 50vh;
+    }
+
+}

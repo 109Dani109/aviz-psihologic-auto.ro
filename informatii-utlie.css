@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    font-size: 230%;
+    margin: 20px 0px;
+}
+
+#gdpr, #termenisiconditii, #politicaconfidentialitate, #notainformare, #cookies {
+    padding: 50px 0px;
+}
+
+.informatii {
+    padding: 0px 15%;
+    text-align: center;
+}

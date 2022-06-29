@@ -1,0 +1,10 @@
+:root{
+    --h1Size: 50px;
+    --grayNav:rgb(194,203,210); 
+    --MainColor: radial-gradient(circle, rgba(6,29,84,1) 0%, rgba(40,49,221,1) 100%);
+    --SecondColor: #31a2d6;
+    
+    /* rgb(216, 182, 111); */
+    /* rgb(224,165,58); */
+    /* rgb(1,44,109); */
+}

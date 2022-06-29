@@ -1,0 +1,4 @@
+User-agent: *
+
+Sitemap: https://psyhology.ro/sitemap.xml
+Sitemap: https://psyhology.ro/sitemap.rss
